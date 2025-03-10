@@ -30,3 +30,67 @@ int main() {
 
     return 0;
 }
+
+#include <stdio.h>
+
+int main() {
+    // Movimentação da Torre (5 casas para a direita)
+    printf("Movimento da Torre:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Direita\n");
+    }
+    
+    // Movimentação do Bispo (5 casas na diagonal Cima e Direita)
+    printf("\nMovimento do Bispo:\n");
+    int j = 0;
+    while (j < 5) {
+        printf("Cima, Direita\n");
+        j++;
+    }
+    
+    // Movimentação da Rainha (8 casas para a esquerda)
+    printf("\nMovimento da Rainha:\n");
+    int k = 0;
+    do {
+        printf("Esquerda\n");
+        k++;
+    } while (k < 8);
+    
+    return 0;
+}
+Explicação do Código:
+Torre:
+Utilizamos um laço for para simular o movimento da Torre. A Torre move-se 5 casas para a direita, então imprimimos "Direita" 5 vezes.
+Bispo:
+Utilizamos um laço while para simular o movimento do Bispo. O Bispo move-se 5 casas na diagonal "Cima, Direita", portanto, imprimimos essa combinação 5 vezes.
+Rainha:
+Utilizamos um laço do-while para simular o movimento da Rainha. A Rainha move-se 8 casas para a esquerda, então imprimimos "Esquerda" 8 vezes.
+Como Funciona:
+Cada uma das peças se move conforme sua regra específica, e as direções dos movimentos são exibidas no console conforme o número de casas que a peça se move.
+O laço for é utilizado para a Torre, o laço while para o Bispo e o laço do-while para a Rainha.
+Saída Esperada:
+Movimento da Torre:
+Direita
+Direita
+Direita
+Direita
+Direita
+
+Movimento do Bispo:
+Cima, Direita
+Cima, Direita
+Cima, Direita
+Cima, Direita
+Cima, Direita
+
+Movimento da Rainha:
+Esquerda
+Esquerda
+Esquerda
+Esquerda
+Esquerda
+Esquerda
+Esquerda
+Esquerda
+Detalhes:
+Cada peça segue sua movimentação específica de acordo com a solicitação.
